@@ -14,7 +14,7 @@ public class Finance {
 
         Finance finance = new Finance();
         boolean isValidCommand = finance.validateCommandArguments(args);
-        if(isValidCommand == true){
+        if(isValidCommand != true){
             commandsToUsage.get(args[0]);
             return;
         }
@@ -54,6 +54,7 @@ public class Finance {
                 return;
             case MORTGAGE_CALCULATOR:
                 System.out.println("Finding your monthly payment ...");
+                MortgageCalculator.main(arguments);
                 return;
         }
     }
