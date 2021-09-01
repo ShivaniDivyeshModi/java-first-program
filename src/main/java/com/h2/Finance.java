@@ -14,7 +14,7 @@ public class Finance {
 
         Finance finance = new Finance();
         boolean isValidCommand = finance.validateCommandArguments(args);
-        if(isValidCommand != true){
+        if(isValidCommand == true){
             commandsToUsage.get(args[0]);
             return;
         }
