@@ -1,5 +1,3 @@
-package com.h2;
-
 import java.util.Arrays;
 import java.util.Map;
 
